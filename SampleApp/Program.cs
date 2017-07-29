@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using SwitchOnlineClient.Network.NintendoAccount;
+using SwitchOnlineClient.Models.NintendoAccount;
 using SwitchOnlineClient.Network.SwitchOnlineAccount;
 using SwitchOnlineClient.Network.GameWebService;
 
@@ -17,7 +18,8 @@ namespace SampleApp
             Console.WriteLine("SessionTokenCodeVerifier ? >");
             var sessionTokenCodeVerifier = Console.ReadLine().Trim();
 
-            var sessionToken = NintendoOAuthService.GetSessionToken(sessionTokenCode, sessionTokenCodeVerifier).Result.SessionToken;
+            var sessionTokenModel = NintendoOAuthService.GetSessionToken(sessionTokenCode, sessionTokenCodeVerifier).Result;
+            var sessionToken = sessionTokenModel.SessionToken;
             Console.WriteLine($"Session Token is {sessionToken}");
             Console.WriteLine("Please save and reuse it");
 
@@ -25,9 +27,12 @@ namespace SampleApp
 
             var accountToken = SwitchAccountService.GetAccountToken(tokens).Result;
             var gameServices = SwitchAccountService.GetGameService().Result;
-            var gameServiceToken = SwitchAccountService.GetGameWebServiceToken(gameServices.GameServiceList.First(g => g.Name == "スプラトゥーン2").ID).Result;
 
-            var client = new WebServiceClient("https://app.splatoon2.nintendo.net/", gameServiceToken.Body.AccessToken);
+            var spl2 = gameServices.GameServiceList.First(g => g.Name == "スプラトゥーン2");
+
+            var gameServiceToken = SwitchAccountService.GetGameWebServiceToken(spl2.ID).Result;
+
+            var client = new WebServiceClient(spl2.URI, gameServiceToken.Body.AccessToken);
             client.Initialize().Wait();
 
             var timeline = client.GetAPIResponse("/api/timeline").Result;
