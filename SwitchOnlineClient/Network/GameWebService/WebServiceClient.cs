@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Spla2View.Network.GameWebService
+namespace SwitchOnlineClient.Network.GameWebService
 {
     public class WebServiceClient
     {

@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-using Spla2View.Models.NintendoAccount;
-using Spla2View.Models.SwitchOnlineAccount;
+using SwitchOnlineClient.Models.NintendoAccount;
+using SwitchOnlineClient.Models.SwitchOnlineAccount;
 
-namespace Spla2View.Network.SwitchOnlineAccount
+namespace SwitchOnlineClient.Network.SwitchOnlineAccount
 {
     public class SwitchAccountService
     {

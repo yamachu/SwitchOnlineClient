@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Spla2View.Models.SwitchOnlineAccount
+namespace SwitchOnlineClient.Models.SwitchOnlineAccount
 {
     public class SwitchOnlineToken
     {

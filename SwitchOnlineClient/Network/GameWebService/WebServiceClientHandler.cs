@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Spla2View.Network.GameWebService
+namespace SwitchOnlineClient.Network.GameWebService
 {
     public class WebServiceClientHandler : DelegatingHandler
     {

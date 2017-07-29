@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Spla2View.Models.NintendoAccount
+namespace SwitchOnlineClient.Models.NintendoAccount
 {
     public class NintendoToken
     {

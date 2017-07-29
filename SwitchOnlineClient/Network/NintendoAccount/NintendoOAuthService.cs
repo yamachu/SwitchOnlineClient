@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 
-using Spla2View.Models.NintendoAccount;
-using Spla2View.Utils;
+using SwitchOnlineClient.Models.NintendoAccount;
+using SwitchOnlineClient.Utils;
 
-namespace Spla2View.Network.NintendoAccount
+namespace SwitchOnlineClient.Network.NintendoAccount
 {
     public class NintendoOAuthService
     {

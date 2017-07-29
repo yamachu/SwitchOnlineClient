@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Spla2View.Models.SwitchOnlineAccount
+namespace SwitchOnlineClient.Models.SwitchOnlineAccount
 {
     public class GameWebServices
     {

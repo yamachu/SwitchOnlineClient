@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spla2View", "Spla2View\Spla2View.csproj", "{7775E00E-9BCF-4B5B-BFFF-065AF6EC7A3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchOnlineClient", "SwitchOnlineClient\SwitchOnlineClient.csproj", "{7775E00E-9BCF-4B5B-BFFF-065AF6EC7A3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{6EC9291F-8964-45EC-96EE-62EAB1307043}"
 EndProject

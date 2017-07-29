@@ -2,7 +2,7 @@
 using System.Text;
 using System.Security.Cryptography;
 
-namespace Spla2View.Utils
+namespace SwitchOnlineClient.Utils
 {
     internal class Hash
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using Spla2View.Network.NintendoAccount;
-using Spla2View.Network.SwitchOnlineAccount;
-using Spla2View.Network.GameWebService;
+using SwitchOnlineClient.Network.NintendoAccount;
+using SwitchOnlineClient.Network.SwitchOnlineAccount;
+using SwitchOnlineClient.Network.GameWebService;
 
 namespace SampleApp
 {

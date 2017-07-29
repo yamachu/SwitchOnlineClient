@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading;
 
-namespace Spla2View.Network.SwitchOnlineAccount
+namespace SwitchOnlineClient.Network.SwitchOnlineAccount
 {
     internal class SwitchAccountClientHandler : DelegatingHandler
     {
