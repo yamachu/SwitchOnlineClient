@@ -1,3 +1,5 @@
+# DOES NOT WORK DUE TO API'S BREAKING CHANGE
+
 # SwitchOnlineClient
 
 ## About
